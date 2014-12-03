@@ -1,0 +1,43 @@
+{
+	"id":"default",
+	"type":"polygonGame",
+	"free_points":4,
+	"tool_threshold_multiplier":5,
+	"length_threshold_multiplier":10,
+	"parallel_threshold_degrees":2,
+	"length_threshold_pixels":5,
+	"angle_threshold_degrees":2,
+	"right_threshold_degrees":2,
+	"initial_state":{
+		"targets":[
+			{"id":"t1", "type":"trapezoid"}
+		],
+		"messages":[
+			{"id":"m1", "trigger_cmd":"toolMenu", "message_type":"persistent", "text":"Make a BIG trapezoid."}
+		],
+		"oob":[
+			{
+				"points":[
+					{"id":"op1", "x":0.45, "y":0},
+					{"id":"op2", "x":0.55, "y":0},
+					{"id":"op3", "x":0.55, "y":0.999},
+					{"id":"op4", "x":0.45, "y":0.999}
+				]	
+			}	
+		],
+		"drawstate":
+		{
+			"points":[
+				{"id":"p1", "x":0.05, "y":0.3, "fixed":false, "pinned":false},
+				{"id":"p2", "x":0.05, "y":0.7, "fixed":false, "pinned":false},
+				{"id":"p3", "x":0.6, "y":0.3, "fixed":false, "pinned":false},
+				{"id":"p4", "x":0.6, "y":0.7, "fixed":false, "pinned":false}
+			],
+			"segments":[
+				{"id":"s1", "p1":"p1", "p2":"p2"}
+			]
+			
+		}
+		
+	}
+}
